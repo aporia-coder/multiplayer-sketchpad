@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   background(0);
-  socket = io.connect("http://localhost:3000");
+  socket = io.connect("/");
   socket.on("mouse", (data) => {
     fill(100, 0, 30);
     noStroke();
